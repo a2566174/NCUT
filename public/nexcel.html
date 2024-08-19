@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <script src="../../IPconfig.js"></script>
+
+  <!-- 設定LOGO -->
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon"> 
+  <link rel="stylesheet" href="./stylesheets/bootstrap.css">
+  <link rel="stylesheet" href="./css/nnav.css">
+  
+
+
+  <script src="./js/bootstrap.js"></script>
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script src="https://unpkg.com/read-excel-file@4.x/bundle/read-excel-file.min.js"></script>
+
+  <script type="text/javascript" src="javascripts/api.js"></script>
+
+
+  <title>鞋業製造及品管管理系統</title>
+</head>
+
+<body class="h-100" style="background-color: #1D2041;">
+  <div class="container-fluid text-light">
+    <div class="d-flex bd-highlight mb-3">
+      <div class="me-auto p-3">
+        <a class="navbar-brand text-white text-decoration-none" href="./index.html">
+          <img src="./images/wlogo.png" height="60" width="60">
+          <strong>鞋業製造及品管管理系統</strong>
+        </a>
+      </div>
+
+      
+
+      <div class="p-2">
+        <ul class="nav my-auto">
+          <li class="nav-item" style="text-align: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+              <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+            </svg>
+            <a class="nav-link text-white text-decoration-none active" href="index.html">首頁</a>
+          </li>
+          <li class="nav-item" style="text-align: center; background-color: rgba(255, 255, 255, 0.3); border-bottom: tomato 5px solid;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-plus" viewBox="0 0 16 16">
+              <path d="M8 6.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V11a.5.5 0 0 1-1 0V9.5H6a.5.5 0 0 1 0-1h1.5V7a.5.5 0 0 1 .5-.5z"/>
+              <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"/>
+            </svg>
+            <a class="nav-link text-white text-decoration-none" href="nexcel.html" aria-current="page">匯入製令單</a>
+          </li>
+          <li class="nav-item" style="text-align: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+              <path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1h-.5Z"/>
+              <path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5Z"/>
+            </svg>
+            <a class="nav-link text-white text-decoration-none" href="CuttingDispatch.html">工單管理</a>
+          </li>
+          <li class="nav-item" style="text-align: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar2-plus" viewBox="0 0 16 16">
+              <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"/>
+              <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4zM8 8a.5.5 0 0 1 .5.5V10H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V11H6a.5.5 0 0 1 0-1h1.5V8.5A.5.5 0 0 1 8 8z"/>
+            </svg>
+            <a class="nav-link text-white text-decoration-none" href="CuttingDispatch.html">生產派工</a>
+          </li>
+          <li class="nav-item" style="text-align: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard2-pulse" viewBox="0 0 16 16">
+              <path d="M9.5 0a.5.5 0 0 1 .5.5.5.5 0 0 0 .5.5.5.5 0 0 1 .5.5V2a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 2v-.5a.5.5 0 0 1 .5-.5.5.5 0 0 0 .5-.5.5.5 0 0 1 .5-.5h3Z"/>
+              <path d="M3 2.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 0 0-1h-.5A1.5 1.5 0 0 0 2 2.5v12A1.5 1.5 0 0 0 3.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 12.5 1H12a.5.5 0 0 0 0 1h.5a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-12Z"/>
+              <path d="M9.979 5.356a.5.5 0 0 0-.968.04L7.92 10.49l-.94-3.135a.5.5 0 0 0-.926-.08L4.69 10H4.5a.5.5 0 0 0 0 1H5a.5.5 0 0 0 .447-.276l.936-1.873 1.138 3.793a.5.5 0 0 0 .968-.04L9.58 7.51l.94 3.135A.5.5 0 0 0 11 11h.5a.5.5 0 0 0 0-1h-.128L9.979 5.356Z"/>
+            </svg>
+            <a class="nav-link text-white text-decoration-none" href="CuttingDispatch.html">生產監控</a>
+          </li>
+          <li class="nav-item" style="text-align: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-line" viewBox="0 0 16 16">
+              <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"/>
+            </svg>
+            <a class="nav-link text-white text-decoration-none" href="mon3.html">品管分析</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container p-5 text-white">
+    <div class="p-3 text-center" style="border-radius: 10px; background-color: rgba(255, 255, 255, 0.3);">
+      <h3>
+        <strong>
+          匯入資料庫
+        </strong>
+      </h3>
+      <p>
+        將Excel轉檔後匯入至資料庫當中。
+      </p>
+      
+      <div class="justify-content-center" id="row" style="display: inline-flex; width: 100%; ">
+      
+        <input type="file" class="form-control" id="input" name="uploadfile" style="height: 100%; width: 30%; margin-right: 20px;" accept=".xlsx,.xls">
+          <!--選擇檔案-->
+
+        <button type="button" class="btn btn-primary" onclick="click0()" style=" margin-right: 50px;">匯入</button>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-5 mt-2 mb-4" role="alert" id="x">
+
+        </div>
+      </div>
+
+      <div class="row my-auto justify-content-center align-items-center">
+        <div class="col-1">
+          <div class="load" id="loading" style="display: none;"></div>
+        </div>
+
+        <div class="col-5">
+          <div class="progress" id="myProgress" style="background-color: #E9ECEF; margin-right: 10px; height: 10px; display: none;">
+            <div class="progress-bar" id="myBar"></div>
+          </div>
+        </div>
+        <div class="col-1 justify-content-end" id="prlabel"></div>
+      </div>
+      
+      <style>
+         @keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to { 
+        transform: rotate(360deg);
+    }
+}
+ 
+
+ @-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to { 
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+        .load {
+          width: 60px;
+          height: 60px;
+          margin: 10px auto 0;
+          border:solid 10px white;
+          border-radius: 50%;
+          border-right-color: transparent;
+          border-bottom-color: transparent;
+          -webkit-transition: all 0.5s ease-in;
+            -webkit-animation-name:             rotate; 
+            -webkit-animation-duration:         1.0s; 
+            -webkit-animation-iteration-count:  infinite;
+            -webkit-animation-timing-function: linear;
+              
+              transition: all 0.5s ease-in;
+            animation-name:             rotate; 
+            animation-duration:         1.0s; 
+            animation-iteration-count:  infinite;
+            animation-timing-function: linear; 
+        }
+      </style>
+      
+      
+      <div id="into"></div>
+
+    </div>
+
+    
+  </div>
+
+
+    
+
+
+  <div class="container-fluid h-100" style="background-color: rgba(255, 255, 255, 0.1);">
+    <div class="p-2 h-100" style="border:0;">
+      <!--Flex item 1-->
+        <!--格式顯示-->
+        <div class="container" style="color: white;">
+          <table class="table">
+            <thead class="text-white">
+              <tr>
+                <th scope="col" style="width: 15%;">部位名稱</th>
+                <th scope="col" style="width: 20%;">產品編號</th>
+                <th scope="col" style="width: 35%;">材料名稱及規格+附註</th>
+                <th scope="col" style="width: 15%;">本批數量（全）</th>
+                <th scope="col" style="width: 15%;">單位</th>
+
+
+              </tr>
+
+              
+            </thead>
+
+            <tbody class="text-white" id="exceltable">
+
+
+
+            </tbody>
+          </table>
+
+        </div>
+
+
+
+
+
+
+    </div>
+  </div>
+</body>
+
+</html>
