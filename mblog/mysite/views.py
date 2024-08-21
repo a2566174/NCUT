@@ -5,8 +5,8 @@ from datetime import datetime
 
 def homepage(request):
     posts = Post.objects.all()
-   #now = datetime.now()
-   # return render(request,"index.html",locals())
+    now = datetime.now()
+    return render(request,"index.html",locals())
     post_lists = list()
     for count,post in enumerate(posts):
         post_lists.append("No.{}:".format(str(count))+str(post)+"<br>")
