@@ -10,5 +10,6 @@ class Post (models.Model):
         ordering = ('-pub_date',)
     def __str__(self):
         return self.title     
-
+class JsonImport(models.Model):
+    title = models.CharField(max_length=100)
 # Create your models here.

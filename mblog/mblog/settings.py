@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-omws*nhf4_2a48g-(8#zy%3a^g@0gj*pbi7-u)=9f*b^v#1tm@
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-
+ALLOWED_HOSTS= "*"
 
 # Application definition
 
@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'mysite',
-    'APP',
+    'rest_framework',
+    
 ]
 
 MIDDLEWARE = [
@@ -124,3 +125,4 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
