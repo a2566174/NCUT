@@ -1,7 +1,7 @@
 from django.contrib import admin
-from mysite.models import post
+from mysite.models import Post
 
-class postadmin(admin.ModelAdmin):
+class PostAdmin(admin.ModelAdmin):
     list_display = ('title','slug','pub_date')
-admin.site.register(post)
+admin.site.register(Post,PostAdmin)
 # Register your models here.

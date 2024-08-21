@@ -1,10 +1,10 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from mysite.models import post
+from mysite.models import Post
 from datetime import datetime
 
 def homepage(request):
-    posts = post.objects.all()
+    posts = Post.objects.all()
    #now = datetime.now()
    # return render(request,"index.html",locals())
     post_lists = list()
