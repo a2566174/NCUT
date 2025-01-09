@@ -17,10 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from mysite.views import homepage
 from django.urls import path, include
+from django.urls import path
 
 
 urlpatterns = [
-    path('',homepage),
+    path('', include('mysite.urls')), # 將首頁路由設置為 mysite
     path('admin/', admin.site.urls),
     path('ManufacturingOder/', include('ManufacturingOder.urls')),
     path('api/', include('api.urls')), 
