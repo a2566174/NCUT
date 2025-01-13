@@ -18,12 +18,13 @@ from django.contrib import admin
 from mysite.views import homepage
 from django.urls import path, include
 from django.urls import path
-
-
+from django.conf import settings
+from django.conf.urls.static import static
+from ManufacturingOder import views  
 urlpatterns = [
     path('', include('mysite.urls')), # 將首頁路由設置為 mysite
     path('admin/', admin.site.urls),
     path('ManufacturingOder/', include('ManufacturingOder.urls')),
     path('api/', include('api.urls')), 
     
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

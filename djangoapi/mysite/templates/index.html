@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 
@@ -10,13 +11,11 @@
   <script src="../../IPconfig.js"></script>
 
   <!-- 設定LOGO -->
-  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon"> 
-  <link rel="stylesheet" href="./stylesheets/bootstrap.css">
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon"> 
+  <link rel="stylesheet" href="{% static 'stylesheets/bootstrap.css' %}">
 
-
-
-  <script src="./js/bootstrap.js"></script>
-  <script src="./js/jquery-3.4.1.min.js"></script> 
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script> 
 
   <!-- <link href="./javascripts/css.js"rel="stylesheet">-->
 
@@ -63,7 +62,7 @@
     transform:skew(-15deg);
   }
 </style>
-<body class="w-100" style="background-color: #e6ddd9; background-image: url(./images/index/factory.png); background-size: cover;" >
+<body class="w-100" style="background-color: #e6ddd9; background-image: url({% static 'images/index/factory.png' %}); background-size: cover;" >
   <div class="container-fluid">
     <div class="container-fluid pt-3" style="padding-right: 100px; padding-left: 100px;">
       <ul class="nav justify-content-between" style=" color: white;">
@@ -75,7 +74,7 @@
           <a class="nav-link nav-button" href="CuttingDispatch.html" style="color: white; font-size: 20px;">生產派工</a>
         </li>
         <li class="nav-item">
-          <img src="./images/wlogo.png" height="60" width="60">
+          <img src="{% static 'images/wlogo.png' %}" height="60" width="60">
         </li>
         <li class="nav-item">
           <a class="nav-link nav-button" href="CuttingMonitor.html" style="color: white; font-size: 20px;">生產監控</a>
@@ -87,7 +86,6 @@
     </div>
   </div>
 
-    <!-- <div class="tittle" style="margin: 1cm; font-size: 30px; color: white;"> -->
     <div class="tittle" style="margin-top: 80px; text-align: center; font-size: 60px; color: white;">
       <strong>
         鞋業智能製造與品質管理系統
@@ -97,27 +95,27 @@
     <div class="container-fluid w-100 h-100">
       <div style="margin-left: 220px; margin-top: 120px;">
         <div class="block me-5">
-          <img class="block-img" src="images/index/step01.gif" width="180" height="180">
+          <img class="block-img" src="{% static 'images/index/step01.gif' %}" width="180" height="180">
           <div class="hori2"><p style="margin-top: 130px; margin-left: -50px;"><a href="Excel.html" style="color: white; text-decoration: none;">匯入製令單</a></p></div>
         </div>
       
         <div class="block me-5">
-          <img class="block-img" src="images/index/step04.gif"  width="180" height="180">
+          <img class="block-img" src="{% static 'images/index/step04.gif' %}"  width="180" height="180">
           <div class="hori2"><p style="margin-top: 130px; margin-left: -50px;"><a href="CuttingDispatch.html" style="color: white; text-decoration: none;">生產派工</a></p></div>
         </div>
     
         <div class="block me-5">
-          <img class="block-img" src="images/index/step02.gif" width="180" height="180">
+          <img class="block-img" src="{% static 'images/index/step02.gif' %}" width="180" height="180">
           <div class="hori2"><p style="margin-top: 130px; margin-left: -50px;"><a href="OrderList.html" style="color: white; text-decoration: none;">派工單管理</a></p></div>
         </div>
     
         <div class="block me-5">
-          <img class="block-img" src="images/index/step05.gif" width="180" height="180">
+          <img class="block-img" src="{% static 'images/index/step05.gif' %}" width="180" height="180">
           <div class="hori2"><p style="margin-top: 130px; margin-left: -50px;"><a href="CuttingMonitor.html" style="color: white; text-decoration: none;">生產監控</a></p></div>
         </div>
     
         <div class="block me-5">
-          <img class="block-img" src="images/index/step08.gif" width="180" height="180">
+          <img class="block-img" src="{% static 'images/index/step08.gif' %}" width="180" height="180">
           <div class="hori2"><p style="margin-top: 130px; margin-left: -50px;"><a href="mon3.html" style="color: white; text-decoration: none;">品管分析</a></p></div>
         </div>
       </div>
